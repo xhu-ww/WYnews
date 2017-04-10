@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include layout="@layout/toolbar_layout"/>-->
+
+    <FrameLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RadioGroup
+        android:gravity="center"
+        android:id="@+id/rg_bottom_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <RadioButton
+            android:checked="true"
+            android:text="主页"
+            android:id="@+id/rb_home"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/bottom_home_selector"
+         />
+        <RadioButton
+            android:text="新闻"
+            android:id="@+id/rb_news"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/bottom_news_selector"
+         />
+        <RadioButton
+            android:text="图片"
+            android:id="@+id/rb_picture"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/bottom_picture_selector"
+         />
+        <RadioButton
+            android:text="视频"
+            android:id="@+id/rb_movie"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/bottom_video_selector"
+         />
+        <RadioButton
+            android:text="个人"
+            android:id="@+id/rb_person"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/bottom_person_selector"
+         />
+
+    </RadioGroup>
+
+</RelativeLayout>
